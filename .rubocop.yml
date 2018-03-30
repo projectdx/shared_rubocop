@@ -153,20 +153,6 @@ Style/BlockDelimiters:
 Style/Documentation:
   Enabled: false
 
-# Checks whether the source file has a utf-8 encoding comment or not
-# AutoCorrectEncodingComment must match the regex
-# /#.*coding\s?[:=]\s?(?:UTF|utf)-8/
-Style/Encoding:
-  EnforcedStyle: never
-  SupportedStyles:
-    - when_needed
-    - always
-    - never
-  AutoCorrectEncodingComment: '# encoding: utf-8'
-
-Style/IfUnlessModifier:
-  MaxLineLength: 80
-
 Style/InverseMethods:
   Enabled: true
   # `InverseMethods` are methods that can be inverted by a not (`not` or `!`)
@@ -209,9 +195,6 @@ Style/SymbolArray:
   SupportedStyles:
     - percent
     - brackets
-
-Style/WhileUntilModifier:
-  MaxLineLength: 80
 
 # `WordArray` enforces how array literals of word-like strings should be expressed.
 Style/WordArray:
