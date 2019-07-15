@@ -3,8 +3,11 @@ require: "rubocop-rspec"
 # Common configuration.
 AllCops:
   # This should be overridden in each app
-  # TargetRubyVersion: 2.1
-  # TargetRailsVersion: 4.0
+  # TargetRubyVersion: 2.5
+  # TargetRailsVersion: 5.0
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
 
   Exclude:
     - 'db/schema.rb'
@@ -151,9 +154,6 @@ Style/BlockDelimiters:
 
 
 Style/Documentation:
-  Enabled: false
-
-Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/InverseMethods:
