@@ -6,9 +6,6 @@ AllCops:
   # TargetRubyVersion: 2.5
   # TargetRailsVersion: 5.0
 
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
   Exclude:
     - 'db/schema.rb'
     - 'db/bootstrap.rb'
@@ -154,6 +151,9 @@ Style/BlockDelimiters:
 
 
 Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/InverseMethods:
