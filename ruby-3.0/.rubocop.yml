@@ -10,15 +10,10 @@ AllCops:
     - 'db/schema.rb'
     - 'db/bootstrap.rb'
     - 'config/initializers/secret_token.rb'
-  RSpec:
-    Patterns:
-    - _spec.rb
-    - "(?:^|/)spec/"
-  RSpec/FactoryGirl:
-    Patterns:
-    - spec/factories/**/*.rb
+
   DisplayStyleGuide: true
   ExtraDetails: true
+  NewCops: enable
 
 Layout/ParameterAlignment:
   # Alignment of parameters in multi-line method calls.
@@ -214,13 +209,13 @@ Style/WordArray:
 Metrics/BlockLength:
   CountComments: false  # count full line comments?
   Max: 50
-  ExcludedMethods: []
+  IgnoredMethods: []
 
 Metrics/ClassLength:
   CountComments: false  # count full line comments?
   Max: 120
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
   # To make it possible to copy or click on URIs in the code, we allow lines
   # containing a URI to be longer than Max.
@@ -235,14 +230,14 @@ Metrics/LineLength:
   # The IgnoredPatterns option is a list of !ruby/regexp and/or string
   # elements. Strings will be converted to Regexp objects. A line that matches
   # any regular expression listed in this option will be ignored by LineLength.
-  IgnoredPatterns: []
+  AllowedPatterns: []
 
 Metrics/MethodLength:
   CountComments: false  # count full line comments?
   Max: 15
 
 # Align ends correctly.
-Lint/EndAlignment:
+Layout/EndAlignment:
   # The value `keyword` means that `end` should be aligned with the matching
   # keyword (`if`, `while`, etc.).
   # The value `variable` means that in assignments, `end` should be aligned
